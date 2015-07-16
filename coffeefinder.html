@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="coffeefinder.css">
+		<link rel="shortcut icon" type="image/png" href="favicon.png" />
+		<meta charset="UTF-8">
+		<title>Coffee Finder SF</title>
+		<body topmargin="0px" leftmargin="0px" marginheight="0px" marginwidth="0px">
+		<script src="//use.typekit.net/wta0uxy.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header-section">
+				<!--START SVG-->
+				<div class="bridge-svg">
+					<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+			 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="134px" height="87px"
+			 viewBox="0 0 134 87" enable-background="new 0 0 134 87" xml:space="preserve">
+		<title>bridge and drop copy 3</title>
+		<desc>Created with Sketch.</desc>
+		<g id="Page-1" sketch:type="MSPage">
+			<g id="Artboard-1" transform="translate(-633.000000, -141.000000)" sketch:type="MSArtboardGroup">
+				<g id="bridge-and-drop-copy-3" transform="translate(634.000000, 144.000000)" sketch:type="MSLayerGroup">
+					<path id="Shape" sketch:type="MSShapeGroup" fill="none" stroke="#1E2D32" stroke-width="3" d="M0,56.987
+						c17.615-7.249,30.109-24.36,30.565-44.438 M132.306,57.312c-17.616-7.249-30.11-24.36-30.565-44.438 M101.407,12.718
+						c0,0.269-0.003,0.538-0.009,0.806c-0.429,18.937-15.956,34.158-35.046,34.158s-34.617-15.22-35.046-34.158
+						c-0.006-0.268-0.009-0.537-0.009-0.806 M30.971,13.532v70.253 M101.732,83.784V13.532 M0.97,64.595h131.742"/>
+					<path id="Shape_1_" sketch:type="MSShapeGroup" fill="none" stroke="#1E2D32" stroke-width="3" d="M66,48.651v15.625"/>
+					<path id="Shape_2_" sketch:type="MSShapeGroup" fill="none" stroke="#1E2D32" stroke-width="3" d="M84,43.112v21.164"/>
+					<path id="Shape_3_" sketch:type="MSShapeGroup" fill="none" stroke="#1E2D32" stroke-width="3" d="M48,43.112v21.164"/>
+					<path id="Shape_4_" sketch:type="MSShapeGroup" fill="none" stroke="#1E2D32" stroke-width="3" d="M14,48.976v14.961"/>
+					<path id="Shape_5_" sketch:type="MSShapeGroup" fill="none" stroke="#1E2D32" stroke-width="3" d="M119,50.277v13.999"/>
+					<path id="Shape_6_" sketch:type="MSShapeGroup" fill="none" stroke="#1E2D32" stroke-width="3" d="M73.63,17.592
+						c0,2.461-1.24,7.808-7.037,7.808c-6.059,0-7.038-5.348-7.038-7.808c0-7.352,7.038-17.548,7.038-17.548S73.63,10.979,73.63,17.592
+						L73.63,17.592z"/>
+				</g>
+			</g>
+		</g>
+		</svg>
+				</div>
+				<!--END SVG-->
+				<div class="title">
+					<h1>Coffee Finder</h1>
+					<h2>San Francisco</h2>
+				</div>
+				<div class="start-quiz">
+					<p>Find your coffee spot</p>
+					<!--START SVG-->
+					<div class="arrow">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="21px" height="11.122px" viewBox="-0.121 -0.121 21 11.122" enable-background="new -0.121 -0.121 21 11.122"
+	 xml:space="preserve">
+<line fill="none" stroke="#EB5B5C" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="0.629" y1="0.629" x2="10.251" y2="10.251"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="20.129" y1="0.629" x2="10.507" y2="10.251"/>
+</svg>					</div>
+					<!--END SVG-->
+				</div>
+			</div>
+		</div>
+		<div class="quiz-section">
+			<div class="paragraph">
+					<p id="prompt-one">I'm feeling  
+						<span class="select-container select-one"></span>.
+					</p>
+						<ul class="select-options one">
+							<li value="cheery"><p class="choice choice-one">cheery</p></li>
+							<li value="pensive"><p class="choice choice-one">pensive</p></li>
+							<li value="productive"><p class="choice choice-one">productive</p></li>
+						</ul>
+					<p id="prompt-two" class="check">My ideal cafe has  
+						<span class="select-container select-two"></span>.
+					</p>
+						<ul class="select-options two">
+							<li value="wifi"><p class="choice choice-two">wifi</p></li>
+							<li value="no-wifi"><p class="choice choice-two">no wifi</p></li>
+						</ul>
+					<p id="prompt-three" class="check">A side of toast would be 
+						<span class="select-container select-three"></span>.
+					</p>
+						<ul class="select-options three">
+							<li value="amazing"><p class="choice choice-three">amazing</p></li>
+							<li value="not-amazing"><p class="choice choice-three">not for me</p></li>
+						</ul>
+					<p id="prompt-four" class="check">I'll be traveling   
+						<span class="select-container select-four"></span>.
+					</p>
+						<ul class="select-options four">
+							<li value="solo"><p class="choice choice-four">solo</p></li>
+							<li value="group"><p class="choice choice-four">with a group</p></li>
+						</ul>
+			</div>
+			<div class="answer sightglass">
+				<p>Head on over to</p>
+				<h1>Sightglass Coffee</h1>
+				<p>South of Market</p>
+				<div class="button-pair">
+					<a href="https://www.sightglasscoffee.com/" title="Sightglass" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Sightglass/@37.7769813,-122.4085708,15z/data=!4m2!3m1!1s0x0:0xc144ba641bc1c6bb"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer mazarine">
+				<p>Head on over to</p>
+				<h1>Mazarine Coffee</h1>
+				<p>Financial District</p>
+				<div class="button-pair">
+					<a href="http://www.mazarinecoffee.com/" title="Mazarine" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Mazarine+Coffee/@37.7875432,-122.4038912,15z/data=!4m2!3m1!1s0x0:0x616337bd1712a8cc"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer andytown">
+				<p>Head on over to</p>
+				<h1>Andytown</h1>
+				<p>Outer Sunset</p>
+				<div class="button-pair">
+					<a href="http://www.andytownsf.com/" title="Andytown" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Andytown+Coffee+Roasters/@37.7566719,-122.5022955,15z/data=!4m2!3m1!1s0x0:0xbfb64139d85ba75d?sa=X&ei=j2ChVaWYMYLVoATutoW4Dw&ved=0CIsBEPwSMAo"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer village-market">
+				<p>Head on over to</p>
+				<h1>Village Market</h1>
+				<p>Inner Richmond</p>
+				<div class="button-pair">
+					<a href="http://www.yelp.com/biz/village-market-san-francisco" title="Village Market" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Village+Market/@37.7846287,-122.4665652,15z/data=!4m2!3m1!1s0x0:0x6f1dba558894e018"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer matching-half">
+				<p>Head on over to</p>
+				<h1>Matching Half</h1>
+				<p>North of Panhandle</p>
+				<div class="button-pair">
+					<a href="http://www.matchinghalfcafe.com/" title="Matching Half" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Matching+Half+Cafe/@37.7772309,-122.4414266,15z/data=!4m2!3m1!1s0x0:0x134241c0fa896ab1?sa=X&ei=FGGhVbXTGcuuogS5wLqYCA&ved=0CI0BEPwSMAo"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer haus">
+				<p>Head on over to</p>
+				<h1>Haus Coffee</h1>
+				<p>The Mission</p>
+				<div class="button-pair">
+					<a href="http://www.yelp.com/biz/haus-coffee-san-francisco" title="Haus Coffee" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Haus+Coffee/@37.7526871,-122.4137339,15z/data=!4m2!3m1!1s0x0:0x43b7c8b8b865719e?sa=X&ei=qmWhVY2KLMLioATp7Z7oBA&ved=0CIoBEPwSMAs"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer flywheel">
+				<p>Head on over to</p>
+				<h1>Flywheel</h1>
+				<p>Upper Haight</p>
+				<div class="button-pair">
+					<a href="http://www.flywheelcoffee.com/" title="Flywheel Coffee" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Flywheel+Coffee+Roasters/@37.7697241,-122.4532311,15z/data=!4m2!3m1!1s0x0:0x4b40083cee9cda37?sa=X&ei=zGWhVaXtLJLdoATcrp-ICg&sqi=2&ved=0CIoBEPwSMAo"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer reveille">
+				<p>Head on over to</p>
+				<h1>Reveille Coffee</h1>
+				<p>The Castro</p>
+				<div class="button-pair">
+					<a href="http://www.reveillecoffee.com/" title="Reveille Coffee" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/R%C3%A9veille+Coffee+Co./@37.7611009,-122.4344261,15z/data=!4m2!3m1!1s0x0:0xec2446f27349f342?sa=X&ei=8mWhVac-hP2hBLrso8gC&ved=0CIYBEPwSMAo"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer contraband">
+				<p>Head on over to</p>
+				<h1>Contraband Coffee Bar</h1>
+				<p>Nob Hill</p>
+				<div class="button-pair">
+					<a href="http://www.contrabandcoffeebar.com/" title="Contraband Coffee Bar" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Contraband+Coffee+Bar/@37.7910904,-122.419305,15z/data=!4m2!3m1!1s0x0:0xc52fd1973f87786f"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer sextant">
+				<p>Head on over to</p>
+				<h1>Sextant Coffee</h1>
+				<p>South of Market</p>
+				<div class="button-pair">
+					<a href="http://sextantcoffee.com/" title="Sextant Coffee" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Sextant+Coffee+Roasters/@37.7724305,-122.4129039,15z/data=!4m2!3m1!1s0x0:0xe4ff4588f86ba24c?sa=X&ei=8WahVdaTGI61ogS3q4LoAg&ved=0CIsBEPwSMA4"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer trouble">
+				<p>Head on over to</p>
+				<h1>Trouble Coffee Co</h1>
+				<p>Outer Sunset</p>
+				<div class="button-pair">
+					<a href="http://www.yelp.com/biz/trouble-coffee-company-san-francisco" title="Trouble Coffee Company" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Trouble+Coffee+Co/@37.7602579,-122.5053843,15z/data=!4m2!3m1!1s0x0:0xf791f514821e1bec"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer mill">
+				<p>Head on over to</p>
+				<h1>The Mill</h1>
+				<p>Alamo Square</p>
+				<div class="button-pair">
+					<a href="http://www.themillsf.com/" title="The Mill" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/The+Mill/@37.7764719,-122.4378332,15z/data=!4m2!3m1!1s0x0:0x185a61a92a363ce8"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer tiny-warrior">
+				<p>Head on over to</p>
+				<h1>Tiny Warrior</h1>
+				<p>The Mission</p>
+				<div class="button-pair">
+					<a href="http://www.tinywarriorcoffee.com/" title="Tiny Warrior Coffee" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Tiny+Warrior+Coffee/@37.7620386,-122.4188229,15z/data=!4m2!3m1!1s0x0:0x22abcfd8ec85c00"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer front">
+				<p>Head on over to</p>
+				<h1>Front</h1>
+				<p>Potrero Hill</p>
+				<div class="button-pair">
+					<a href="https://www.frontsf.com/" title="Front Cafe" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Front+Cafe/@37.7644345,-122.3950641,15z/data=!4m2!3m1!1s0x0:0xb6540c4d30be8adf"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer hollow">
+				<p>Head on over to</p>
+				<h1>Hollow</h1>
+				<p>Inner Sunset</p>
+				<div class="button-pair">
+					<a href="http://hollowsf.com/" title="Hollow" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Hollow/@37.763585,-122.4733194,15z/data=!4m2!3m1!1s0x0:0x3c780fe74be6bbc"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer pinhole">
+				<p>Head on over to</p>
+				<h1>Pinhole Coffee</h1>
+				<p>Bernal Heights</p>
+				<div class="button-pair">
+					<a href="http://www.pinholecoffee.com/" title="Pinhole Coffee" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/pinhole+coffee/@37.7396485,-122.4190081,15z/data=!4m2!3m1!1s0x0:0xf07030520e4c0629"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+			<div class="answer ritual">
+				<p>Head on over to</p>
+				<h1>Ritual</h1>
+				<p>The Mission</p>
+				<div class="button-pair">
+					<a href="https://www.ritualroasters.com/" title="Ritual Coffee Roasters" target="_blank"><button>View Website</button></a>
+					<a href="https://www.google.com/maps/place/Ritual+Coffee+Roasters/@37.7564374,-122.4214066,15z/data=!4m2!3m1!1s0x0:0x6b734213bb326353"><button>View Map</button></a>
+				</div>
+				<div class="play-again">
+					<div class="arrow-left">
+					<!---START SVG--->
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="37.44px" height="19.73px" viewBox="0 0 37.44 19.73" enable-background="new 0 0 37.44 19.73" xml:space="preserve">
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M-3.412,5.436"/>
+<path fill="none" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.671,5.436"/>
+<line fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10.556" y1="1" x2="1.691" y2="9.865"/>
+<polyline fill="none" stroke="#EB5B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.556,18.73 1.691,9.865 35.749,9.865 "/>
+</svg>
+					<!---END SVG--->
+					</div>
+					<p class="new">Find a new cafe</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-container">
+				<!--START SVG-->
+				<div class="footer-bridge">
+					<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+			 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="134px" height="87px"
+			 viewBox="0 0 134 87" enable-background="new 0 0 134 87" xml:space="preserve">
+		<title>bridge and drop copy 3</title>
+		<desc>Created with Sketch.</desc>
+		<g id="Page-1" sketch:type="MSPage">
+			<g id="Artboard-1" transform="translate(-633.000000, -141.000000)" sketch:type="MSArtboardGroup">
+				<g id="bridge-and-drop-copy-3" transform="translate(634.000000, 144.000000)" sketch:type="MSLayerGroup">
+					<path id="Shape" sketch:type="MSShapeGroup" fill="none" stroke="#FFF" stroke-width="3" d="M0,56.987
+						c17.615-7.249,30.109-24.36,30.565-44.438 M132.306,57.312c-17.616-7.249-30.11-24.36-30.565-44.438 M101.407,12.718
+						c0,0.269-0.003,0.538-0.009,0.806c-0.429,18.937-15.956,34.158-35.046,34.158s-34.617-15.22-35.046-34.158
+						c-0.006-0.268-0.009-0.537-0.009-0.806 M30.971,13.532v70.253 M101.732,83.784V13.532 M0.97,64.595h131.742"/>
+					<path id="Shape_1_" sketch:type="MSShapeGroup" fill="none" stroke="#FFF" stroke-width="3" d="M66,48.651v15.625"/>
+					<path id="Shape_2_" sketch:type="MSShapeGroup" fill="none" stroke="#FFF" stroke-width="3" d="M84,43.112v21.164"/>
+					<path id="Shape_3_" sketch:type="MSShapeGroup" fill="none" stroke="#FFF" stroke-width="3" d="M48,43.112v21.164"/>
+					<path id="Shape_4_" sketch:type="MSShapeGroup" fill="none" stroke="#FFF" stroke-width="3" d="M14,48.976v14.961"/>
+					<path id="Shape_5_" sketch:type="MSShapeGroup" fill="none" stroke="#FFF" stroke-width="3" d="M119,50.277v13.999"/>
+					<path id="Shape_6_" sketch:type="MSShapeGroup" fill="none" stroke="#FFF" stroke-width="3" d="M73.63,17.592
+						c0,2.461-1.24,7.808-7.037,7.808c-6.059,0-7.038-5.348-7.038-7.808c0-7.352,7.038-17.548,7.038-17.548S73.63,10.979,73.63,17.592
+						L73.63,17.592z"/>
+				</g>
+			</g>
+		</g>
+		</svg>
+				</div>
+				<!--END SVG-->
+				<div class="footer-ul">
+					<div class="line"></div>
+					<ul>
+						<li>
+							<a href="http://zcole.me/" title="Zach Cole" target="_blank">
+								<h3 class="footer-link">Coffee and code by Zach Cole
+									<span class="arrow-right">
+									<!---START SVG--->
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 width="23.446px" height="12.925px" viewBox="0 0 23.446 12.925" enable-background="new 0 0 23.446 12.925" xml:space="preserve">
+	<line fill="none" stroke="#FFFFFF" stroke-width="1.3161" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.243" y1="11.475" x2="21.255" y2="6.462"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.3161" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		16.243,1.45 21.255,6.462 2,6.462 "/>
+	</svg>
+									<!---END SVG--->
+									</span>
+								</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Github" target="_blank">
+								<h3 class="footer-link">Fork on Github
+									<span class="arrow-right">
+									<!---START SVG--->
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 width="23.446px" height="12.925px" viewBox="0 0 23.446 12.925" enable-background="new 0 0 23.446 12.925" xml:space="preserve">
+	<line fill="none" stroke="#FFFFFF" stroke-width="1.3161" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.243" y1="11.475" x2="21.255" y2="6.462"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.3161" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		16.243,1.45 21.255,6.462 2,6.462 "/>
+	</svg>
+									<!---END SVG--->
+									</span>
+								</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Twitter" target="_blank">
+								<h3 class="footer-link">Share on Twitter
+									<span class="arrow-right">
+									<!---START SVG--->
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 width="23.446px" height="12.925px" viewBox="0 0 23.446 12.925" enable-background="new 0 0 23.446 12.925" xml:space="preserve">
+	<line fill="none" stroke="#FFFFFF" stroke-width="1.3161" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.243" y1="11.475" x2="21.255" y2="6.462"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.3161" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		16.243,1.45 21.255,6.462 2,6.462 "/>
+	</svg>
+									<!---END SVG--->
+									</span>
+								</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Facebook" target="_blank">
+								<h3 class="footer-link">Share on Facebook
+									<span class="arrow-right">
+									<!---START SVG--->
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 width="23.446px" height="12.925px" viewBox="0 0 23.446 12.925" enable-background="new 0 0 23.446 12.925" xml:space="preserve">
+	<line fill="none" stroke="#FFFFFF" stroke-width="1.3161" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.243" y1="11.475" x2="21.255" y2="6.462"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.3161" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		16.243,1.45 21.255,6.462 2,6.462 "/>
+	</svg>
+									<!---END SVG--->
+									</span>
+								</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script src="jquery-2.1.1.js"></script>
+	<script src="velocity.min.js"></script>
+	<script src="coffeefinder.js"></script>
+</html>
