@@ -25,8 +25,75 @@ var fadeInChoices = function(selectnumber) {
 	$(selectnumber).fadeIn(500);
 };
 
-var answerLog = [
-]
+var answerLog = {};
+var coffeeShopData = {
+  "cheery": {
+    "wifi": {
+      "amazing": {
+        "solo": "mazarine",
+        "with a group": "andytown"
+      },
+      "not for me": {
+        "solo": "village-market",
+        "with a group": "matching-half"
+      }
+    },
+    "no wifi": {
+      "amazing": {
+        "solo": "trouble",
+        "with a group": "mill"
+      },
+      "not for me": {
+        "solo": "tiny-warrior",
+        "with a group": "front"
+      }
+    }
+  },
+  "pensive": {
+    "wifi": {
+      "amazing": {
+        "solo": "reveille",
+        "with a group": "andytown"
+      },
+      "not for me": {
+        "solo": "haus",
+        "with a group": "flywheel"
+      }
+    },
+    "no wifi": {
+      "amazing": {
+        "solo": "trouble",
+        "with a group": "trouble"
+      },
+      "not for me": {
+        "solo": "hollow",
+        "with a group": "pinhole"
+      }
+    }
+  },
+  "productive": {
+    "wifi": {
+      "amazing": {
+        "solo": "reveille",
+        "with a group": "mazarine"
+      },
+      "not for me": {
+        "solo": "contraband",
+        "with a group": "sextant"
+      }
+    },
+    "no wifi": {
+      "amazing": {
+        "solo": "mill",
+        "with a group": "mill"
+      },
+      "not for me": {
+        "solo": "ritual",
+        "with a group": "sightglass"
+      }
+    }
+  },
+};
 
 $('.start-quiz').click(function(){
 	$('.quiz-section').velocity('scroll', { duration: 400, easing: "ease-out" });
@@ -81,128 +148,13 @@ $('.choice-four').click(function(){
 	showFinalAnswer();
 });
 
+function cssClassBasedOnAnswers(){
+  return coffeeShopData[answerLog.feeling][answerLog.wifi][answerLog.toast][answerLog.traveling];
+}
+
 function showFinalAnswer() {
-	if(answerLog.feeling === "cheery" &&
-	answerLog.wifi === "wifi" &&
-	answerLog.toast === "amazing" &&
-	answerLog.traveling === "solo") {
-		$('.mazarine').show();
-	} else if(answerLog.feeling === "cheery" &&
-	answerLog.wifi === "wifi" &&
-	answerLog.toast === "amazing" &&
-	answerLog.traveling === "with a group") {
-		$('.andytown').show();
-	} else if(answerLog.feeling === "pensive" &&
-	answerLog.wifi === "wifi" &&
-	answerLog.toast === "amazing" &&
-	answerLog.traveling === "solo") {
-		$('.reveille').show();
-	} else if(answerLog.feeling === "pensive" &&
-	answerLog.wifi === "wifi" &&
-	answerLog.toast === "amazing" &&
-	answerLog.traveling === "with a group") {
-		$('.andytown').show();
-	} else if(answerLog.feeling === "productive" &&
-	answerLog.wifi === "wifi" &&
-	answerLog.toast === "amazing" &&
-	answerLog.traveling === "solo") {
-		$('.reveille').show();
-	} else if(answerLog.feeling === "productive" &&
-	answerLog.wifi === "wifi" &&
-	answerLog.toast === "amazing" &&
-	answerLog.traveling === "with a group") {
-		$('.mazarine').show();
-	} else if(answerLog.feeling === "cheery" &&
-	answerLog.wifi === "wifi" &&
-	answerLog.toast === "not for me" &&
-	answerLog.traveling === "solo") {
-		$('.village-market').show();
-	} else if(answerLog.feeling === "cheery" &&
-	answerLog.wifi === "wifi" &&
-	answerLog.toast === "not for me" &&
-	answerLog.traveling === "with a group") {
-		$('.matching-half').show();
-	} else if(answerLog.feeling === "pensive" &&
-	answerLog.wifi === "wifi" &&
-	answerLog.toast === "not for me" &&
-	answerLog.traveling === "solo") {
-		$('.haus').show();
-	} else if(answerLog.feeling === "pensive" &&
-	answerLog.wifi === "wifi" &&
-	answerLog.toast === "not for me" &&
-	answerLog.traveling === "with a group") {
-		$('.flywheel').show();
-	} else if(answerLog.feeling === "productive" &&
-	answerLog.wifi === "wifi" &&
-	answerLog.toast === "not for me" &&
-	answerLog.traveling === "solo") {
-		$('.contraband').show();
-	} else if(answerLog.feeling === "productive" &&
-	answerLog.wifi === "wifi" &&
-	answerLog.toast === "not for me" &&
-	answerLog.traveling === "with a group") {
-		$('.sextant').show();
-	} else if(answerLog.feeling === "cheery" &&
-	answerLog.wifi === "no wifi" &&
-	answerLog.toast === "amazing" &&
-	answerLog.traveling === "solo") {
-		$('.trouble').show();
-	} else if(answerLog.feeling === "cheery" &&
-	answerLog.wifi === "no wifi" &&
-	answerLog.toast === "amazing" &&
-	answerLog.traveling === "with a group") {
-		$('.mill').show();
-	} else if(answerLog.feeling === "pensive" &&
-	answerLog.wifi === "no wifi" &&
-	answerLog.toast === "amazing" &&
-	answerLog.traveling === "solo") {
-		$('.trouble').show();
-	} else if(answerLog.feeling === "pensive" &&
-	answerLog.wifi === "no wifi" &&
-	answerLog.toast === "amazing" &&
-	answerLog.traveling === "with a group") {
-		$('.trouble').show();
-	} else if(answerLog.feeling === "productive" &&
-	answerLog.wifi === "no wifi" &&
-	answerLog.toast === "amazing" &&
-	answerLog.traveling === "solo") {
-		$('.mill').show();
-	} else if(answerLog.feeling === "productive" &&
-	answerLog.wifi === "no wifi" &&
-	answerLog.toast === "amazing" &&
-	answerLog.traveling === "with a group") {
-		$('.mill').show();
-	} else if(answerLog.feeling === "cheery" &&
-	answerLog.wifi === "no wifi" &&
-	answerLog.toast === "not for me" &&
-	answerLog.traveling === "solo") {
-		$('.tiny-warrior').show();
-	} else if(answerLog.feeling === "cheery" &&
-	answerLog.wifi === "no wifi" &&
-	answerLog.toast === "not for me" &&
-	answerLog.traveling === "with a group") {
-		$('.front').show();
-	} else if(answerLog.feeling === "pensive" &&
-	answerLog.wifi === "no wifi" &&
-	answerLog.toast === "not for me" &&
-	answerLog.traveling === "solo") {
-		$('.hollow').show();
-	} else if(answerLog.feeling === "pensive" &&
-	answerLog.wifi === "no wifi" &&
-	answerLog.toast === "not for me" &&
-	answerLog.traveling === "with a group") {
-		$('.pinhole').show();
-	} else if(answerLog.feeling === "productive" &&
-	answerLog.wifi === "no wifi" &&
-	answerLog.toast === "not for me" &&
-	answerLog.traveling === "solo") {
-		$('.ritual').show();
-	} else if(answerLog.feeling === "productive" &&
-	answerLog.wifi === "no wifi" &&
-	answerLog.toast === "not for me" &&
-	answerLog.traveling === "with a group") {
-		$('.sightglass').show();
-	}
+  var cssClass = cssClassBasedOnAnswers();
+  $("." + cssClass).show();
 };
 
 $('.play-again').click(function(){
